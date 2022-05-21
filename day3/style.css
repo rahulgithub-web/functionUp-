@@ -1,0 +1,86 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+.container {
+    display: flex;
+    vertically Center top to bottom
+    align-items:center; 
+    Horizontally Center left to right
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, #544a7d, #ffd452);
+}
+
+.container form {
+    border: 1px solid red;
+    padding: 20px;
+    height: 50%;
+    width: 50%;
+    background: linear-gradient(to right, #8360c3, #2ebf91);
+    margin-top: 10em;
+    justify-content: center;
+    text-align: center;
+}
+
+.container form label {
+    font-size: 40px;
+} */
+
+/* ------------------------------------------------------------------------------------------------ */
+
+/* #a {
+    border: 1px solid red;
+    width: 300px;
+    height: 200px;
+}
+
+#b {
+    border: 2px solid green;
+    width: 200px;
+    height: 100px;
+}
+
+#c {
+    border: 2px solid blue;
+    width: 100px;
+    height: 50px;
+} */
+
+
+/* ------------------------------------------------------------------------------------------------ */
+
+#a > p {
+    border: 2px solid red;
+}
+
+#a > div {
+    border: 2px solid green;
+}
+
+#a * {
+    border-radius: 20px;
+    width:fit-content;
+    padding: 10px;
+}
+
+#pseudo::before {
+    content: "Hi";
+    margin-right: 5px;
+}
+
+#pseudo::after {
+    content: "Bye";
+    margin-left: 5px;
+}
+
+#pseudo:hover {
+    background-color: yellow;
+    cursor: pointer;
+    font-size: 50px;
+    color: black;
+}
