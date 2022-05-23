@@ -98,7 +98,7 @@ function capital() {
 // ++ and --
 
 
-//  Math fcuntions in JS:- 
+//  Math functions in JS:- 
 // var rst= Math.round(4.3)
 // console.log(rst)
 

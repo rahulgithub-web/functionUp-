@@ -8,7 +8,7 @@ document.write("Good Morning Everyone");
 document.getElementById("demo").innerHTML = "Hello Javascript!";
 
 // Concatenation
-document.getElementById("demo2").innerHTML = 5 + 3 + "HELLO" + 2 + 7; // 8HELL27
+document.getElementById("demo2").innerHTML = 5 + 3 + "HELLO" + 2 + 7; // 8HELLO27
 
 var x = 34;
 var y = 20;
