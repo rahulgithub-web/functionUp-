@@ -240,4 +240,7 @@
 // const arr8 = arr.splice(4,1, 'sat');
 // console.log(arr5); //output; ["mon", "tues", "wed", "thurs", 'sat']
 
+console.log(Boolean("s"));
+console.log(Boolean(`s`));
+
 
