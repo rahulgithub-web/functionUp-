@@ -57,82 +57,124 @@ const facebookProfiles = [
   },
 ];
 
+
 // 1. USE HIGHER ORDER FUNCTIONS TO SOLVE THE ABOVE QUESTIONS(map, filter, find, forEach etc. )
 
-const fullNames = facebookProfiles
-  .filter((profile) => profile.address.location === "gurgaon")
-  .map((profile) => profile.firstName + " " + (profile.lastName || ""));
 
-  console.log(fullNames);
-
-  // --------------------------------  
-
-//solution2:
-function findName(stateName) {
-    let name = "person not found"
-
-    for (let index = 0; index < facebookProfiles.length; index++) {
-        const person = facebookProfiles[index];
-        const { address, firstName, lastName } = person;
-        if (address.state === stateName) {
-            name = firstName + " " + (lastName || "");
-            break;
-        }
+// ------------------------------------------------------------------  
+function profileLookup(name, property) {
+  for (let i = 0; i < facebookProfiles.length; i++) {
+    const profile = facebookProfiles[i];
+    if (profile.firstName === name) {
+      return profile[property] ? profile[property] : "no such property";
     }
-
-    return name
-}
-
-
-//method 2
-function findFullName(stateName) {
-    const person = facebookProfiles.find(person => person.address.state === stateName);
-
-    //using ternary
-    return person
-        ? person.firstName + " " + (person.lastName || "")
-        : "person not found";
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  function profileLookup(name, property) {
-    for (let i = 0; i < facebookProfiles.length; i++) {
-      if (facebookProfiles[i].firstName == name) {
-        if (facebookProfiles[i].hasOwnProperty(property)) {
-          return facebookProfiles[i][property];
-        } else if (facebookProfiles[i].address.hasOwnProperty(property)) {
-          return facebookProfiles[i].address[property];
-        } else {
-          return "no such property found";
-        }
-      }
-    }
-    return "person does not exist";
   }
-  console.log(profileLookup("Akash", "number"));
+
+  return "person does not exist";
+}
+
+function getNamesFromGurgaon() {
+  const result = [];
+  for (let i = 0; i < facebookProfiles.length; i++) {
+    const person = facebookProfiles[i];
+    if (person.address.location === "gurgaon") {
+      //Edge case: when last name is niot present
+      const name = person.firstName + " " + (person.lastName || "");
+      result.push(name);
+    }
+  }
+  return result;
+}
+// -------------------------------------------------------------------------  
+const fullNames = facebookProfiles
+  .filter((person) => person.address.location === "gurgaon")
+  .map((person) => person.firstName + " " + (person.lastName || ""));
+
+console.log(fullNames);
+
+// -----------------------------------------------------------------------------  
+function findName(stateName) {
+  let name = "person not found";
+
+  for (let i = 0; i < facebookProfiles.length; i++) {
+    const person = facebookProfiles[i];
+    const { address, firstName, lastName } = person;
+    if (address.state === stateName) {
+      name = firstName + " " + (lastName || "");
+      break;
+    }
+  }
+
+  return name;
+}
+
+// ------------------------------------------------------------------
+
+function findFullName(stateName) {
+  const person = facebookProfiles.find(
+    (person) => person.address.state === stateName
+  );
+
+  //using ternary
+  return person
+    ? person.firstName + " " + (person.lastName || "")
+    : "person not found";
+}
+
+// ----------------------------------------------------------------------
+
+function printNamesUpdated() {
+  const nameArr = [];
+  for (let i = 0; i < facebookProfiles.length; i++) {
+    const { firstName, lastName } = facebookProfiles[i];
+    const fullName = firstName + " " + (lastName || "");
+    nameArr.push(fullName);
+  }
+  return nameArr;
+}
+
+// -------------------------------------------------------------  
+
+function printLikesUpdated() {
+  let likesArr = [];
+  for (let i = 0; i < facebookProfiles.length; i++) {
+    // edge case:
+    const likes = facebookProfiles[i].likes || [];
+
+    // we can use push as well
+    likesArr = [...likesArr, ...likes];
+  }
+  return likesArr;
+}
+
+// ----------------------------------------------------  
+
+function problemSix() {
+  let name = "not found";
+  for (let i = 0; i < facebookProfiles.length; i++) {
+    const person = facebookProfiles[i];
+    if (person.address.location === "delhi" && person.hasDrivingLicense) {
+      name = person.firstName + " " + (person.lastName || "");
+      break;
+    }
+  }
+
+  return name;
+}
+
+// ----------------------------------------------------------------  
+function problemSeven() {
+  let name = "not found";
+  for (let i = 0; i < facebookProfiles.length; i++) {
+    const person = facebookProfiles[i];
+    if (
+      person.likes.includes("driving") &&
+      person.hasDrivingLicense === false
+    ) {
+      name = person.firstName + " " + (person.lastName || "");
+      break;
+    }
+  }
+
+  return name;
+}
