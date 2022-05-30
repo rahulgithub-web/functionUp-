@@ -28,7 +28,7 @@ const cardData = [
 
 // -------------------------------------------------   
 // 1.) complete the above function,it should return true /false if card is present/absent
-function findCard(value, suit) {
+function findCard(suit, value) {
     for (let i = 0; i < cardData.length; i++) {
         const card = cardData[i];
         if (card.suit === suit && card.value === value) {

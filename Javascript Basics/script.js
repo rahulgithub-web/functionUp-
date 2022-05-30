@@ -23,7 +23,7 @@ const c1 = myFunction1(99, 1);
 console.log(a1, b1, c1);
 // output: 3,11,100
 
-// --------------------------------------------------------
+// -------------------------------------------------------
 // 3.) Write a function that takes two values, say a and b, 
 // as arguments Return true if the two values are equal and of the same type:
 

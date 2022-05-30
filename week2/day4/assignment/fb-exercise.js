@@ -65,6 +65,42 @@ const fullNames = facebookProfiles
 
   console.log(fullNames);
 
+  // --------------------------------  
+
+//solution2:
+function findName(stateName) {
+    let name = "person not found"
+
+    for (let index = 0; index < facebookProfiles.length; index++) {
+        const person = facebookProfiles[index];
+        const { address, firstName, lastName } = person;
+        if (address.state === stateName) {
+            name = firstName + " " + (lastName || "");
+            break;
+        }
+    }
+
+    return name
+}
+
+
+//method 2
+function findFullName(stateName) {
+    const person = facebookProfiles.find(person => person.address.state === stateName);
+
+    //using ternary
+    return person
+        ? person.firstName + " " + (person.lastName || "")
+        : "person not found";
+}
+
+
+
+
+
+
+
+
 
 
 
