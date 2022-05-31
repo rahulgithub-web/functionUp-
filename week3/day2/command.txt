@@ -1,0 +1,20 @@
+==> Command	Description
+
+1.) git init --	Initialize a local Git repository
+2.) git clone -- ssh://git@github.com/[username]/[repository-name].git	Create a local copy of a remote repository
+3.) git status -- Check status
+4.) git add [file-name.txt] -- Add a file to the staging area
+5.) git add -A -- Add all new and changed files to the staging area
+6.) git commit -m "[commit message]" -- Commit changes
+7.) git rm -r [file-name.txt] -- Remove a file(or folder)
+8.) git branch -- List branches (the asterisk denotes the current branch)
+9.) git branch -a -- List all branches (local and remote)
+10.) git branch [branch name] -- Create a new branch
+11.) git checkout -b [branch name] origin/[branch name]  -- Clone a remote branch and switch to it
+12.) git checkout [branch name] -- Switch to a branch
+13.) git checkout - -- Switch to the branch last checked out
+14.) git checkout -- [file-name.txt] -- 	Discard changes to a file
+15.) git merge [branch name] -- Merge a branch into the active branch
+16.) git merge [source branch] [target branch] -- Merge a branch into a target branch
+17.) git stash -- Stash changes in a dirty working directory
+18.) git stash clear -- Remove all stashed entries
