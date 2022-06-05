@@ -103,4 +103,3 @@
 // Number(true)  //1
 // Number(false) //0
 // String(true) // 'true'
-
