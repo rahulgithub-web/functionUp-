@@ -47,19 +47,19 @@
 // 4. Print all prime numbers occurring in 1st 50 natural numbers
 // @rahulbarnwal
 
-// let count = 0;
-// for (let i = 1; i < 51; i++) {
-//   for (j = 2; j < i; j++) {
-//     if (i % j === 0) {
-//       count++;
-//       break;
-//     }
-//   }
-//   if (count === 0) {
-//     console.log(i);
-//   }
-//   count = 0;
-// }
+let count = 0;
+for (let i = 1; i < 51; i++) {
+  for (j = 2; j < i; j++) {
+    if (i % j === 0) {
+      count++;
+      break;
+    }
+  }
+  if (count === 0) {
+    console.log(i);
+  }
+  count = 0;
+}
 
 // output:  1, 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, and 47. 
 

@@ -44,7 +44,7 @@
 //   },
 // };
 
-// person.like[1];
+// console.log(person.like[1]);
 // console.log(person);
 
 // ----------------------------------------

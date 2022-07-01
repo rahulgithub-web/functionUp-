@@ -29,7 +29,7 @@
 // console.log(e);
 
 // ------------------------------------------
-// const f = [3];
+// const f = [3,5,7,8,9,3,2,5,7,];
 // const g = [...f];
 
 // console.log(g);
@@ -37,7 +37,6 @@
 // equality operator
 // const h = [3];
 // console.log(g === h);
-output: false;
 
 // ---------------------------------
 
@@ -56,7 +55,7 @@ output: false;
 // const m = [1,2];
 // console.log(m[1]);
 // output: 2
-
+// m.push(9);
 // const n = [...m];
 // console.log(m === n);
 // output: false
@@ -79,12 +78,12 @@ output: false;
 // =>shallow copy  --------------
 // const p = [1, [2]];
 // const q = [...p];
-
+// console.log(q);
 // p[1].push(10);
 // console.log(q);
 // output: [1, [2,10]]
 
-// that is why this method is called shallow copy because we copy onlt the outer array of the elments
+// that is why this method is called shallow copy because we copy only the outer array of the elments
 
 // -------------------------------------
 // =>deep copy ---------
@@ -101,24 +100,24 @@ output: false;
 // console.log(u);
 // output: [2,3]
 
-// ------------------------------------------
+// -------------------------------------------
 // const v = [2,4];
-
+// console.log(v);
 // const w = JSON.parse(JSON.stringify(v));
 // console.log(w);
 
 // console.log(v === w);
-output: false;
+// output: false;
 
 // v.push(3);
 // console.log(v);
 // output: true;
 // console.log(w);
 
-// ----------------------------------------
+// -------------------------------------------
 // function sum(a,b) {
 //     return function inner() {
-//         const a =3;
+//         const a = 3;
 //         console.log(a);
 //     }
 // }
@@ -126,7 +125,7 @@ output: false;
 // // console.log(res);
 // output: 5
 
-// ---------------------------------------
+// -------------------------------------------
 
 // function inner() {
 //     console.log(a);

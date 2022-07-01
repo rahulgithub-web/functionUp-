@@ -23,8 +23,8 @@ function printText() {
 }
 
 function capital() {
-  var ele = document.getElementById("demo7");
-  ele.innerHTML = ele.innerHTML.toUpperCase();
+  let element = document.getElementById("demo7");
+  element.innerHTML = element.innerHTML.toUpperCase();
 }
 
 
@@ -39,59 +39,63 @@ function capital() {
 
 //  DATA TYPES:-
 
-// var a= 4
-// var b= 6
+// let a= 4
+// let b= 6
 
 // console.log( "the sum is " +  ( a + b) )
 
-// var naming":-
+// let naming":-
 //  begin with alphabets
 //  aplphabets , digits, _ and $ (not contain -)
 // case sesitive
 //  dont use reserved words
 
-// var myCar 
+// let myCar 
 // camel case :-
 // start with a lower case alphabte. and if more than 1 word is there in the name, then next words to start with capital
 
-// var a= 5 // NUmber
-// var b= " hi there" // String
-// var c= [ 23, 6 , "hello", 4] // array
-
+// let a= 5 // NUmber
+// console.log(typeof(a));
+// let b= " hi there" // String
+// let d= {23: "1", 6:"2" , 4:"3"} // array
+// let e = [2];
+// console.log(typeof(e))
+// console.log(typeof(d));
 
 
 // OBJECT
-//  OBJECT is a collection of variable and their values..or keys and their values...or attributes/properties
+//  OBJECT is a collection of keys and their values..or attributes/properties
 // .. object is a collection of key - value pairs
-// var person1 = {
+// let person1 = {
 //     "name" : "PK",
-//     "age": 67,
+//     "age": [67, 90, 99],
 //     "occupation": "shopkeeper",
 //     "weight": "40kgs",
 //     "height": "5 ft 11inch"
 // } // OBJECT
 
 
-// console.log( person1.name )
-// console.log( person1["age"] )
+// console.log( person1.name );
+// console.table(person1["age"] )
+// console.log(person1.age);
 
-// console.log( "My name is ", person1.name , " and I am of " , person1.weight)
+// console.log( "My name is ", person1.name , " and I am of" , person1.weight)
 
 
 //  STRINGS
 
-// var str= "Functionup Is awesome. It is the best thing to happen to our lives"
-// // console.log( str.length )
+// let str= "Functionup Is awesome.It is the best thing to happen to our lives"
+// console.log( str.length )
 
-// var vow= " Pritesh Sir said:  \"Functionup will always be there for you \"  "  // escape character
+// let vow= " Pritesh Sir said:  \"Functionup will always be there for you \"  "  // escape character
 
 
-// console.log( vow)
+// console.log(vow)
 
 
 // NUmbers
 
-// var num= 20
+// let num = 20;
 // console.log(++num)
 // console.log(num)
 
@@ -99,27 +103,30 @@ function capital() {
 
 
 //  Math functions in JS:- 
-// var rst= Math.round(4.3)
-// console.log(rst)
+// let rst= Math.round(4.6)
+// console.table(rst)
 
-// var randomlyGeneratedNumber= Math.random() // it generates a random number between 0(inlcuding 0) and 1(not including 1).  [0, 1)
+// let randomlyGeneratedNumber= Math.random() // it generates a random number between 0(inlcuding 0) and 1(not including 1).  [0, 1)
 // console.log(randomlyGeneratedNumber) 
 
 //  generate a random number between 100 to 200 [100 , 200)
-// var numBw100To200= (Math.random() * 100)  + 100
-
+// let numBw100To200= (Math.random() * 100)  + 100
+// console.log(numBw100To200)
 
 //  generate a random number between 123 to 210 [123 , 210)
-// var numBw123to210 = (Math.random() * 87) + 123
+// let numBw123to210 = (Math.random() * 87) + 123
+// console.log(numBw123to210)
 
-//  var upper = Math.ceil( 4.9999999)
+//  let upper = Math.ceil( 4.111111111111)
 // console.log(upper)
 
-//  var lower = Math.floor( 4.999999)
+//  let lower = Math.floor( 4.999999)
 // console.log(lower)
 
-// Math.min( 12, 8, 78, 45)
-// Math.max( 12, 8, 78, 45)
+// let min = Math.min( 12, 8, 78, 45);
+// console.log(min);
+// let max = Math.max( 12, 8, 78, 45)
+// console.log(max)
 
 
 // <---------------------------------->

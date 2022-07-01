@@ -48,7 +48,7 @@ output: 16;
 // => Example 1
 
 // function sum(a,b) {
-// Passing Parameters as a nad b.
+// Passing Parameters as a and b.
 // const c = a + b;
 // return c;
 // returning the result of a & b in c.

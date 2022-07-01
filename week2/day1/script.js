@@ -10,7 +10,7 @@
 //   console.log("start the car");
 // } else if (light === "green") {
 //   console.log("accelerate the car");
-// }
+// } 
 
 // <----------------------------------------->
 
@@ -79,8 +79,8 @@
 // }
 // console.log(txt);
 
-// for (var i = 0; i < arr.length; i++) {
-//     console.log(arr[i]);
+// for (var j = 0; j < cars.length; j++) {
+//     console.log(cars[j]);
 //   }
 
 // <----------------------------------------------------------------------------->
@@ -98,7 +98,7 @@
 //  }
 // }
 
-var i;
-for (i = 20; i <= 50; i++) {
-  if (i % 2 != 0) console.log(i);
-}
+// var i;
+// for (i = 20; i <= 50; i++) {
+//   if (i % 2 != 0) console.log(i);
+// }

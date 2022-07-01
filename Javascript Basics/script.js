@@ -137,3 +137,43 @@ const c10 = myFunction(500,25);
 console.log(a10, b10, c10);
 // output: 50, 0.1, 125  
 
+// ---------------------------------  
+// --------------------------- Higher Order Functions --------------------------------
+// map method  
+const finalParticipants = ['Taylor', 'Donald', 'Don', 'Natasha', 'Bobby'];
+ 
+// add string after each final participant
+const announcements = finalParticipants.map(member => {
+  return member + ' joined the contest.';
+})
+console.log(announcements);
+
+//  ----------------------  
+// filter method   
+console.log(announcements);
+
+const randomNumbers = [4, 11, 42, 14, 39];
+const filteredArray = randomNumbers.filter(n => {  
+  return n > 5;
+});
+console.log(filteredArray);
+// -------------------------------- 
+// forEach method  
+const numbers = [28, 77, 45, 99, 27];
+ 
+let output = numbers.forEach(number => { number }); 
+console.log(output);
+
+// ---------------------------  
+// reduce method 
+const arrayOfNumbers = [1, 2, 3, 4];
+ 
+const sum = arrayOfNumbers.reduce((accumulator, currentValue) => {  
+  return accumulator + currentValue;
+});
+ 
+console.log(sum); // 10
+
+// ---------------------------------  
+
+
